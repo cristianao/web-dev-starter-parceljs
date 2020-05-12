@@ -1,5 +1,65 @@
-$color: darkgrey;
+html {
+  font-family: "Graphik Web";
+}
 
 body {
-  color: $color;
+  background: radial-gradient(
+      15em 15em at 35% 45%,
+      #ffffff 100%,
+      #e5e5e5 100%,
+      transparent 100%
+    ),
+    radial-gradient(7em 7em at 80% 90%, #ffffff 100%, #e5e5e5 100%);
+  background-repeat: no-repeat;
+}
+
+.header-container {
+  display: grid;
+  padding: 32px;
+  height: 100%;
+}
+
+.header-row {
+  text-align: left;
+}
+
+.header-title {
+  font-weight: medium;
+  font-size: x-large;
+  text-align: left;
+}
+
+.header-menu {
+  text-align: right;
+}
+
+.header-menu-item {
+  padding: 0 32px 0 32px;
+}
+
+.content-row {
+  text-align: left;
+}
+
+.content {
+  font-weight: medium;
+  font-size: 50px;
+  text-align: left;
+}
+
+.cristiana:hover {
+  background-color: rgb(197, 235, 246);
+}
+
+.make-pretty:hover {
+  background-color: rgb(253, 244, 199);
+}
+
+.footer-row {
+  text-align: right;
+}
+
+.footer {
+  text-align: right;
+  margin-right: 10%;
 }
