@@ -47,8 +47,42 @@ body {
   text-align: left;
 }
 
-.cristiana:hover {
-  background-color: rgb(197, 235, 246);
+span{
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    animation-iteration-count: infinite;
+    animation-delay: inherit;
+  }
+}
+
+.cristiana{
+  display: inline;
+  &:before{
+    content: "";
+    position: absolute;
+    background-color: rgb(197, 235, 246);
+    animation-name: highlight-1;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes highlight-1{
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 100%;
+  }
 }
 
 .make-pretty:hover {
